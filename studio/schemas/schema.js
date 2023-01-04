@@ -3,6 +3,6 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import { userSchema } from './userSchema.js'
 
 export default createSchema({
-  //step-step
-  
+  name: 'default',
+  types: schemaTypes.concat([userSchema]),
 })
